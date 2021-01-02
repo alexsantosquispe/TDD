@@ -74,7 +74,7 @@ exports.arraysAnswers = {
     let count = 0;
     let prevElem = arr[0];
     arr = arr.sort();
-    arr.forEach((value, index) => {
+    arr.forEach((value) => {
       if (value === prevElem) {
         count += 1;        
       } else if (count > 1) {
@@ -87,7 +87,7 @@ exports.arraysAnswers = {
   },
 
   square: function(arr) {
-    return arr.map((value, index) => value * value);
+    return arr.map((value) => value * value);
   },
 
   findAllOccurrences: function(arr, target) {
